@@ -1,0 +1,31 @@
+<div class="column is-half">
+    <article class="media box"> 
+        <figure class="media-left"> 
+        <p class="image is-64x64    "> 
+        <img src="https://images.pexels.com/photos/2474014/pexels-photo-2474014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"> 
+        </p>
+        </figure>
+        <div class="media content">
+
+        </div>
+    </article>
+</div>
+
+<%= @tweeets.each do | tweeet | %>
+    <div class="box">
+        <article class="media"> 
+            <div class="media-left">
+                <figure class="image is-64x64">
+                    <img src="https://images.pexels.com/photos/2466644/pexels-photo-2466644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"> 
+                </figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                <strong> Amine Benaceur </strong> <br />
+                <small> @ABDevDesign</small> <br />
+                <p> <%=  tweeet.tweet %> </p>
+                </div>
+            </div>
+        </article>
+    </div>
+<% end %>
